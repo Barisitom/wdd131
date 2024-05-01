@@ -79,3 +79,15 @@ footer {
 footer p {
     margin-bottom: 5px;
 }
+
+#img1 {
+    float: right;
+    width: 120px;
+    height: auto;
+}
+
+#img2 {
+    float: left;
+    width: 120px;
+    height: auto;
+}
