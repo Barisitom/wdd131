@@ -11,7 +11,7 @@ body {
     font-family: "Roboto", Arial, sans-serif; 
 }
 
-header {
+.header {
     background-color: rgba(21, 21, 94, 0.877);
     color: #fff;
     padding: 20px;
