@@ -67,8 +67,11 @@ h2 {
     margin-bottom: 15px;
     padding: 10px; 
 }
-
- a {
+.card > ul {
+    margin: 20px;
+    padding:10px;
+}
+ .card > a {
     text-decoration: none;
 }
 .card {
