@@ -35,7 +35,7 @@ nav ul li {
     margin-right: 20px;
 }
 
-a {
+nav a {
     color: #fff;
     text-decoration: none;
 }
@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 5px;
@@ -68,6 +68,9 @@ h2 {
     padding: 10px; 
 }
 
+ a {
+    text-decoration: none;
+}
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
