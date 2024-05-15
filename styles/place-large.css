@@ -52,7 +52,7 @@ nav{
 
 .hero h3 {
     width:100%;
-    background-color: rgb(6, 51, 6);
+    background-color:black;
     padding: 5px;
     color: white;
     margin-bottom: 5px;
@@ -72,7 +72,7 @@ nav{
 }
 .weather h3 {
     width: 100%;
-    background-color:rgb(6, 51, 6);
+    background-color:black;
     padding: 5px;
     color: white;
     margin-bottom: 10px;
