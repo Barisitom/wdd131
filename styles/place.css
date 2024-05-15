@@ -1,0 +1,64 @@
+@media only screen and (max-width: 600px) {
+    
+    .main {
+        width: 100%;
+        display: inline;
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+    }
+    div {
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px 0;
+        background-image: url(../images/place.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .hero {
+        width: 82vh;
+        min-width:  85vh;
+        height: 50vh;
+        background-color: white;
+        margin: 0;
+        padding:10px;
+        position: relative;
+       
+    }
+
+    .hero h3 {
+        width:85vh;
+        background-color: white;
+        padding: 5px;
+        color: black;
+        margin-bottom: 5px;
+        position: absolute;
+    }
+        
+
+    .weather {
+        width: 82vh;
+        min-width:  85vh;
+        height: 50vh;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        position:relative;
+        left: 0;
+        bottom:  0;
+    
+    }
+    .weather h3 {
+        width: 100%;
+        background-color:white;
+        padding: 5px;
+        color: black;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+}
