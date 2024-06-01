@@ -66,28 +66,28 @@ const temples = [
       location: "Mexico City, Mexico",
       dedicated: "1983, December, 2",
       area: 116642,
-      imageUrl: "images/church.webp"
+      imageUrl: "images/churcha.webp"
     },
     {
       templeName: "Salt Lake Utah",
       location: "Salt Lake City, Utah, United States",
       dedicated: "1893, April, 6",
       area: 253015,
-      imageUrl: "images/church2.webp"
+      imageUrl: "images/churchb.webp"
     },
     {
       templeName: "Rome Italy",
       location: "Rome, Italy",
       dedicated: "2019, March, 10",
       area: 39000,
-      imageUrl: "images/church3.webp"
+      imageUrl: "images/churchc.webp"
     },
     {
       templeName: "Paris France",
       location: "Le Chesnay, France",
       dedicated: "2017, May, 21",
       area: 44409,
-      imageUrl: "images/church4.webp"
+      imageUrl: "images/churchd.webp"
     }
   ];
   
