@@ -1,0 +1,17 @@
+
+@media only screen and (max-width: 600px) {
+    Nav ul {
+            Display: none; /* Hide navigation menu by default on small screens */
+        }
+    
+        #hamburger {
+            Display: block; /* Show hamburger icon on small screens */
+            Cursor: pointer;
+        }
+    
+        Main {
+            Max-width: 80%; /* Adjust width for small screens */
+            Margin: 0 auto; /* Center main content */
+        }
+    }
+    

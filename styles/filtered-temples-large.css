@@ -1,0 +1,149 @@
+
+/* Basic styles */
+Body {
+    Font-family: ‘roboto’, Arial, sans-serif;
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+}
+
+Header {
+    Background-color: rgb(17, 17, 68);
+    Color: #fff;
+    Padding: 10px;
+    text-align: center;
+    
+}
+
+header nav ul{
+    display: flex;
+    list-style:  none;
+    text-decoration: none;
+    Justify-content: space-between;
+    Align-items: center;
+}
+.hamburger{
+    Width: 30px;
+    Height: 15px;
+    Background-color: rgba(171, 157, 233, 0.5);
+    Border-radius: 5px;
+    Padding: 5px;
+    Position : relative;
+}
+.hamburger span{
+    Width: 80%;
+    Height: 2px;
+    Background-color: white;
+    Display: block;
+    Position: absolute;
+    Border-radius: 5px;
+    Top: 50%;
+    Left: 50%;
+    Transform: translate(-50%, -50%);
+    Transition: transform 0.5s, width 0.5s;
+}
+.hamburger .span-1{
+    Transform: translate(-50%, -7px);
+
+}
+.hamburger .span-3{
+    Transform: translate(-50%, 5px);
+
+}
+
+.rotate .span-1{
+    Transform: translate(-50%, -50%) rotate(-45deg);
+}
+.rotate .span-3{
+    Transform: translate(-50%, -50%) rotate( 45deg);
+}
+.rotate .span-2{
+  Width: 0;
+}
+
+Nav{
+    Display: flex;
+
+}
+Nav a:hover {
+    Text-decoration: underline;
+}
+
+Navul {
+    Width: 100%;
+    Margin: 20px;
+    Padding: 0;
+    List-style: none;
+
+}
+
+Navul li {
+    Display: inline;
+    Padding: 5px;
+
+
+}
+Nav a {
+    Text-decoration: none;
+    Color: white;
+    Margin: 10px;
+
+
+}
+
+Main{
+    Max-width: 100%;
+}
+.church {
+    Position: relative;
+    Display: grid;
+    Grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    Grid-template-rows: 200px;
+    Grid-auto-flow: dense;
+    Grid-row: wrap;
+    Text-align: center;
+    
+}
+Main > h2{
+    Text-align: center;
+}
+
+
+div{
+
+    Margin: 20px 0;
+    Padding: 10px;
+}
+div>img{
+    Width: 100%;  
+    Height: 100%;
+}
+Footer {
+    Background-color: #333;
+    Color: #fff;
+    Padding: 10px;
+    Text-align: center;
+}
+
+/* Hamburger menu styles */
+#hamburger {
+    Display: none; /* Hide by default */
+}
+
+
+@media only screen and (max-width: 600px) {
+Nav ul {
+        Display: none; /* Hide navigation menu by default on small screens */
+    }
+
+    #hamburger {
+        Display: block; /* Show hamburger icon on small screens */
+        Cursor: pointer;
+    }
+
+    Main {
+        Max-width: 80%; /* Adjust width for small screens */
+        Margin: 0 auto; /* Center main content */
+    }
+}
+
