@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/formb.css">
+    <title>Product Review Form</title>
+    <meta name="author" content="Barisitom Akpee" />
+    <meta name="description"content="the reason for the form below is to get an opion from the customer our Project" />
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <h1>Product Review Form</h1>
+        <form action="review.html" method="get" class="form">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label>
+                    <input type="radio" name="rating" value="1" required> ★
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2"> ★★
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3"> ★★★
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4"> ★★★★
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5"> ★★★★★
+                </label>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Which of the features did you find useful in the product? <br> <span class="checkbox">(Check all that apply)</span></legend>
+                <label>
+                    <input type="checkbox" id="Durability" name="Durability" value="Durability"> Durability
+                </label>
+                <label>
+                    <input type="checkbox" id="Ease of use" name="Ease of use" value="Ease of use"> ease of use
+                </label>
+                <label>
+                    <input type="checkbox" id="Performance" name="Performance" value="Performance"> Performance
+                </label>
+                <label>
+                    <input type="checkbox" id="Design" name="Design" value="Design"> Design
+                </label>
+            </fieldset>
+
+            <label for="review">Written Review <span class="review">(Optional):</span></label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="username">Your Name <span  class="review">(Optional):</span></label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> My Company</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
