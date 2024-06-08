@@ -5,3 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const lastModified = new Date(document.lastModified).toLocaleDateString();
     document.getElementById('lastModified').textContent = lastModified;
 });
+
+// Hamburger menu functionality
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle("rotate");
+ nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
+});
