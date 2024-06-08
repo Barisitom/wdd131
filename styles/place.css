@@ -1,64 +1,135 @@
-@media only screen and (max-width: 600px) {
-    
-    .main {
-        width: 100%;
-        display: inline;
-        background-image: none;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        text-align: center;
-    }
-    div {
-        width: 100%;
-        min-height: 100vh;
-        padding: 20px 0;
-        background-image: url(../images/place.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+/* styles/place.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --primary-color: rgb(14, 82, 14);
+    --secondary-color: rgb(128, 165, 128);
+    --text-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+}
+
+.main {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero, .weather {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(218, 217, 217, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    background-color:rgb(14, 82, 14);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.hero .info p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.weather h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(14, 82, 14);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.weather h3 img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.weather .weather-info p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
     }
 
-    .hero {
-        width: 82vh;
-        min-width:  85vh;
-        height: 50vh;
-        background-color: white;
-        margin: 0;
-        padding:10px;
-        position: relative;
-       
+    .hero h2, .weather h3 {
+        font-size: 1.5rem;
     }
 
-    .hero h3 {
-        width:85vh;
-        background-color: white;
-        padding: 5px;
-        color: black;
-        margin-bottom: 5px;
-        position: absolute;
-    }
-        
-
-    .weather {
-        width: 82vh;
-        min-width:  85vh;
-        height: 50vh;
-        background-color: white;
-        margin: 10px;
-        padding: 10px;
-        position:relative;
-        left: 0;
-        bottom:  0;
-    
-    }
-    .weather h3 {
-        width: 100%;
-        background-color:white;
-        padding: 5px;
-        color: black;
-        margin-bottom: 10px;
-        position: absolute;
+    .hero, .weather {
+        width: 90%;
     }
 }
