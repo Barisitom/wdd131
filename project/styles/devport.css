@@ -43,12 +43,13 @@ nav ul li a {
 }
 
 .hero {
-    background: rgb(153, 153, 197);
-    color: #fff;
+    background: rgb(212, 210, 210);
+    color: black;
     text-align: center;
     padding: 50px 20px;
     height: 40vh;
     position: relative;
+}
 }
 
 .hero h2 {
