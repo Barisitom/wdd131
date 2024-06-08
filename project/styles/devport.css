@@ -18,6 +18,44 @@ header .container {
     align-items: center;
     padding: 0 20px;
 }
+.hamburger{
+    width: 30px;
+    height: 15px;
+    background-color: rgba(171, 157, 233, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    position : relative;
+}
+.hamburger span{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+}
+.hamburger .span-1{
+    transform: translate(-50%, -7px);
+
+}
+.hamburger .span-3{
+    transform: translate(-50%, 5px);
+
+}
+
+.rotate .span-1{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.rotate .span-3{
+    transform: translate(-50%, -50%) rotate( 45deg);
+}
+.rotate .span-2{
+  width: 0;
+}
 
 header img{
     margin: 0;
