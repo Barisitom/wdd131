@@ -169,3 +169,25 @@ footer img {
     border-radius: 50%;
     margin-left: 50px;
 }
+
+/* Hamburger menu styles */
+#hamburger {
+    display: none; /* Hide by default */
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: none; /* Hide navigation menu by default on small screens */
+    }
+
+    #hamburger {
+        display: block; /* Show hamburger icon on small screens */
+        cursor: pointer;
+    }
+
+    main {
+        max-width: 80%; /* Adjust width for small screens */
+        margin: 0 auto; /* Center main content */
+    }
+}
