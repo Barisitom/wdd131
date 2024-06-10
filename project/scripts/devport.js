@@ -11,6 +11,6 @@ const hamburger = document.getElementById('hamburger');
 const nav = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle("rotate");
- nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
+    hamburger.classList.toggle("rotate");
+    nav.classList.toggle('show');
 });
