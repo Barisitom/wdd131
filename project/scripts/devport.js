@@ -14,3 +14,11 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("rotate");
     nav.classList.toggle('show');
 });
+
+// In review.html
+if (window.location.pathname.endsWith('contact.html')) {
+    let contactCount = localStorage.getItem('contactCount') || 0;
+    contactCount++;
+    localStorage.setItem('contactCount', contactCount);
+    document.body.insertAdjacentHTML('afterbegin', `<p>Sent: ${contactCount}</p>`);
+}
