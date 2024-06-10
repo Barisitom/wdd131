@@ -33,31 +33,75 @@ body {
 header {
     background-color: #2C3E50;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-header h1 {
-    text-align: center;
-    margin-bottom: 10px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger .span-1{
+    transform: translate(-50%, -7px);
+
+}
+.hamburger .span-2{
+    transform: translate(-50%, 0px);
+
+}
+.hamburger .span-3{
+    transform: translate(-50%, 5px);
+
+}
+
+.rotate .span-1{
+    transform: translate(-40%, -10%) rotate(-45deg);
+}
+.rotate .span-3{
+    transform: translate(-40%, -10%) rotate( 45deg);
+}
+.rotate .span-2{
+  width: 0;
 }
 
 nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    z-index: 100;
+}
+
+nav ul li {
+    margin-left: 40px;
 }
 
 nav ul li a {
     color: #fff;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
 
 /* Main content styling */
 main {
@@ -156,5 +200,44 @@ footer p {
 
     .contact h2 {
         font-size: 1.5rem;
+    }
+}
+
+/* Hamburger menu styles */
+#hamburger {
+    display: none; /* Hide by default */
+}
+/* Hamburger menu styles */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: none; /* Hide navigation menu by default on small screens */
+    }
+
+    #hamburger {
+        display: block; /* Show hamburger icon on small screens */
+        cursor: pointer;
+        
+    }
+   
+
+    main {
+        max-width: 80%; /* Adjust width for small screens */
+        margin: 0 auto; /* Center main content */
+    }
+
+    nav ul.show {
+        display: block; /* Show navigation menu when hamburger is clicked */
+        flex-direction: column; /* Stack menu items vertically */
+        background-color: #2C3E50; /* Match the header background color */
+        position: absolute;
+        top: 60px; /* Position below the header */
+        width: 100%;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav ul.show li {
+        margin: 10px 0; /* Add space between menu items */
+        text-align: center; /* Center menu items */
     }
 }
