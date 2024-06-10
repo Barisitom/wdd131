@@ -18,28 +18,30 @@ header .container {
     align-items: center;
     padding: 0 20px;
 }
-.hamburger{
+
+.hamburger {
     width: 30px;
-    height: 15px;
-    background-color: rgba(171, 157, 233, 0.5);
-    border-radius: 5px;
-    padding: 5px;
-    position : relative;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
-.hamburger span{
-    width: 80%;
+
+.hamburger span {
+    width: 100%;
     height: 3px;
     background-color: white;
     display: block;
-    position: absolute;
-    border-radius: 5px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s, width 0.5s;
+    transition: transform 0.3s, opacity 0.3s;
 }
+
 .hamburger .span-1{
     transform: translate(-50%, -7px);
+
+}
+.hamburger .span-2{
+    transform: translate(-50%, 0px);
 
 }
 .hamburger .span-3{
@@ -48,21 +50,14 @@ header .container {
 }
 
 .rotate .span-1{
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-40%, -10%) rotate(-45deg);
 }
 .rotate .span-3{
-    transform: translate(-50%, -50%) rotate( 45deg);
+    transform: translate(-40%, -10%) rotate( 45deg);
 }
 .rotate .span-2{
   width: 0;
 }
-
-header img{
-    margin: 10px;
-    width: 5%;
-    border-radius: 50%;
-}
-
 
 nav ul {
     list-style: none;
@@ -89,12 +84,10 @@ nav ul li a {
     padding: 50px 20px;
     height: 40vh;
     position: relative;
-    z-index : -1;
-}
 }
 
 .hero h2 {
-    margin-top: 5px;
+    margin-top: 40px;
 }
 
 .hero button {
@@ -111,7 +104,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     padding: 20px;
-   justify-content: center;
+    justify-content: center;
 }
 
 .about .container {
@@ -125,12 +118,13 @@ nav ul li a {
     width: 150px;
     height: 150px;
     position: absolute;
-    top: 58%;
-
+    top: 55%;
 }
-.about p{
+
+.about p {
     margin-top: 80px;
 }
+
 .skills {
     background: #f4f4f4;
     padding: 20px;
@@ -150,11 +144,10 @@ nav ul li a {
 .skill {
     display: inline;
     margin: 10px;
-    
 }
+
 .skill img {
     width: 30%;
-
 }
 
 footer {
@@ -167,18 +160,17 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
 footer img {
     width: 30px;
     border-radius: 50%;
     margin-left: 50px;
 }
-
 /* Hamburger menu styles */
 #hamburger {
     display: none; /* Hide by default */
 }
-
-
+/* Hamburger menu styles */
 @media only screen and (max-width: 600px) {
     nav ul {
         display: none; /* Hide navigation menu by default on small screens */
@@ -187,10 +179,28 @@ footer img {
     #hamburger {
         display: block; /* Show hamburger icon on small screens */
         cursor: pointer;
+        
     }
+   
 
     main {
         max-width: 80%; /* Adjust width for small screens */
         margin: 0 auto; /* Center main content */
+    }
+
+    nav ul.show {
+        display: block; /* Show navigation menu when hamburger is clicked */
+        flex-direction: column; /* Stack menu items vertically */
+        background-color: #2C3E50; /* Match the header background color */
+        position: absolute;
+        top: 60px; /* Position below the header */
+        width: 100%;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav ul.show li {
+        margin: 10px 0; /* Add space between menu items */
+        text-align: center; /* Center menu items */
     }
 }
