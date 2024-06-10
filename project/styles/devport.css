@@ -58,7 +58,7 @@ header .container {
 }
 
 header img{
-    margin: 0;
+    margin: 10px;
     width: 5%;
     border-radius: 50%;
 }
